@@ -15,7 +15,7 @@ from textblob import TextBlob
 #import openpyxl
 import time
 import tqdm
-import stopwords as STOPWORDS
+import STOPWORDS
 #To Hide Warnings
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -27,7 +27,7 @@ def main():
     #st.subheader("Select a topic which you'd like to get the sentiment analysis on :")
 
     html_temp = """
-	<div style="background-color:tomato;"><p style="color:white;font-size:40px;padding:9px">Live twitter Sentiment analysis</p></div>
+	<div style="background-color:tomato;"><p style="color:aqua;font-size:40px;padding:9px">Live twitter Sentiment analysis</p></div>
 	"""
     st.markdown(html_temp, unsafe_allow_html=True)
     st.subheader("Select a topic which you'd like to get the sentiment analysis on :")
@@ -90,6 +90,7 @@ def main():
         Topic = str(Topic).lower()
         Topic=' '.join(re.sub('([^0-9A-Za-z \t])', ' ', Topic).split())
         Topic = re.split("\s+",str(Topic))
+	
         stopwords = set(STOPWORDS)
         stopwords.update(Topic) ### Add our topic in Stopwords, so it doesnt appear in wordClous
         ###
