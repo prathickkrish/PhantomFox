@@ -15,7 +15,7 @@ from textblob import TextBlob
 #import openpyxl
 import time
 import tqdm
-import STOPWORDS
+from wordcloud import STOPWORDS
 #To Hide Warnings
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_option('deprecation.showPyplotGlobalUse', False)
