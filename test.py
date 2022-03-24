@@ -20,19 +20,6 @@ import tqdm
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 # Viz Pkgs
-import matplotlib.pyplot as plt
-import matplotlib
-matplotlib.use('Agg')
-import seaborn as sns
-#sns.set_style('darkgrid')
-
-
-STYLE = """
-<style>
-img {
-    max-width: 100%;
-}
-</style> """
 
 def main():
     """ Common ML Dataset Explorer """
