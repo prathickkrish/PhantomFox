@@ -11,7 +11,7 @@ from tweepy import OAuthHandler
 import re
 import textblob
 from textblob import TextBlob
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+#from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import openpyxl
 import time
 import tqdm
